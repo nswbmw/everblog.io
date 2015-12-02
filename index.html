@@ -1,1 +1,50 @@
-hello, everblog!
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>everblog - write blogs in your evernote.</title>
+    <link rel="stylesheet" href="public/style.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Italiana&amp;subset=latin">
+  </head>
+  <body>
+    <section id="top">
+      <div id="heading">
+        <div id="logo">everblog</div>
+        <div id="tagline">write blogs in your evernote.</div>
+      </div>
+    </section>
+
+    <section>
+      <div class="content">
+        <div><h2 id="step-1">Step 1</h2>
+<pre><code>$ npm i everblog -g  
+$ everblog config token xxx  
+$ everblog config noteStoreUrl xxx  
+$ everblog config notebook myblog  
+$ git clone https://github.com/everblogjs/everblog-theme-spa  
+$ cd everblog-theme-spa &amp;&amp; npm i
+</code></pre><h2 id="step-2">Step 2</h2>
+<p>Open evernote:  </p>
+<ol>
+<li>create a new notebook named <code>myblog</code>  </li>
+<li>create a new note named <code>_config.yml</code>  </li>
+<li>write some notes with tags  </li>
+</ol>
+<p><img src="public/images/1.png" alt="_config.yml"><br><img src="public/images/2.png" alt="everblog-top"><br><img src="public/images/3.png" alt="everblog-bottom">  </p>
+<h2 id="step-3">Step 3</h2>
+<pre><code>$ DEBUG=* everblog start
+</code></pre><p><img src="public/images/4.png" alt="gen-everblog-top"><br><img src="public/images/5.png" alt="gen-everblog-top">  </p>
+<p><strong>Tips</strong>:  </p>
+<p><code>token</code> and <code>noteStoreUrl</code> get from:  </p>
+<ul>
+<li><a href="https://www.evernote.com/api/DeveloperToken.action">https://www.evernote.com/api/DeveloperToken.action</a>  </li>
+<li><a href="https://app.yinxiang.com/api/DeveloperToken.action">https://app.yinxiang.com/api/DeveloperToken.action</a></li>
+</ul>
+</div>
+      </div>
+    </section>
+
+    <footer>Powered by <a href="http://everblog.io">everblog</a></footer>
+  </body>
+</html>
